@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-  --height-primary: 60px;
+  --height-primary: 45px;
   
-  --fz: 16px;
+  --fz: 13px;
 
-  --fw-lighter: 500;
+  --fw-lighter: 400;
+  --fw-light: 500;
   --fw-bold: 800;
 
-  --border-general: 1pc solid black;
+  --border-general: 1px solid black;
 }
 
 body{
   font-family: 'Raleway', sans-serif;
   font-size: var(--fz);
+  font-weight: var(--fw-light);
 
   position: relative;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .height-primary{
@@ -29,14 +37,18 @@ body{
 .bold{
   font-weight: var(--fw-bold);
 }
-.light{
+.lighter{
   font-weight: var(--fw-lighter);
 }
 .border--left{
-  border-right: var(--border-general);
+  &>*{
+    border-right: var(--border-general);
+  }
 }
 .border--bottom{
-  border-bottom: var(--border-general);
+  &>*{
+    border-bottom: var(--border-general);
+  }
 }
 .border--bottom--none{
   border-bottom: none;
@@ -44,4 +56,3 @@ body{
 .border--left--none{
   border-left: none;
 }
-

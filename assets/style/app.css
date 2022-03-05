@@ -55,17 +55,25 @@ table {
 }
 
 :root {
-  --height-primary: 60px;
-  --fz: 16px;
-  --fw-lighter: 500;
+  --height-primary: 45px;
+  --fz: 13px;
+  --fw-lighter: 400;
+  --fw-light: 500;
   --fw-bold: 800;
-  --border-general: 1pc solid black;
+  --border-general: 1px solid black;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   font-size: var(--fz);
+  font-weight: var(--fw-light);
   position: relative;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .height-primary {
@@ -81,15 +89,15 @@ body {
   font-weight: var(--fw-bold);
 }
 
-.light {
+.lighter {
   font-weight: var(--fw-lighter);
 }
 
-.border--left {
+.border--left > * {
   border-right: var(--border-general);
 }
 
-.border--bottom {
+.border--bottom > * {
   border-bottom: var(--border-general);
 }
 
