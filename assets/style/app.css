@@ -55,8 +55,11 @@ table {
 }
 
 :root {
-  --height-header: 60px;
+  --height-primary: 60px;
   --fz: 16px;
+  --fw-lighter: 500;
+  --fw-bold: 800;
+  --border-general: 1pc solid black;
 }
 
 body {
@@ -65,9 +68,37 @@ body {
   position: relative;
 }
 
-.height--general {
+.height-primary {
   width: 100%;
-  height: var(--height-header);
+  height: var(--height-primary);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.light {
+  font-weight: var(--fw-lighter);
+}
+
+.border--left {
+  border-right: var(--border-general);
+}
+
+.border--bottom {
+  border-bottom: var(--border-general);
+}
+
+.border--bottom--none {
+  border-bottom: none;
+}
+
+.border--left--none {
+  border-left: none;
 }
 
 /*# sourceMappingURL=app.css.map */
